@@ -45,16 +45,17 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
+        color: Colors.black,
         width: double.infinity,
         height: 100,
-        margin: EdgeInsets.all(16),
-        padding: EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          color: Color(0xffeeeeee),
-          border: Border.all(color: Colors.black, width: 1),
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Text('你好，世界$_counter', style: TextStyle(fontSize: 12, color: Colors.black)),
+        // margin: EdgeInsets.all(16),
+        // padding: EdgeInsets.all(10),
+        // decoration: BoxDecoration(
+        //   color: Color(0xffeeeeee),
+        //   border: Border.all(color: Colors.black, width: 1),
+        //   borderRadius: BorderRadius.circular(10),
+        // ),
+        child: Text('你好，世界$_counter', style: TextStyle(fontSize: 12, color: Colors.white)),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
