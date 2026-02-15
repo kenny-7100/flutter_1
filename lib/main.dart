@@ -13,6 +13,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter 1 App',
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(
+            color: Colors.white,
+            fontSize: 14,
+          ),
+        ),
       ),
       home: const MyHomePage(title: 'Flutter 1'),
     );
@@ -56,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
         //   border: Border.all(color: Colors.black, width: 1),
         //   borderRadius: BorderRadius.circular(10),
         // ),
-        child: Text('你好，世界$_counter', style: TextStyle(fontSize: 12, color: Colors.white)),
+        child: Text('你好，世界$_counter'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
