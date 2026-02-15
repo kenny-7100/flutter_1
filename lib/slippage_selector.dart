@@ -21,6 +21,8 @@ class SlippageSelector extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(height: 16),
+          Row(children: [Text('你好，世界')]),
         ],
       ),
     );
