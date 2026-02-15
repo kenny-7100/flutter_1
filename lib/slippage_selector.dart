@@ -9,7 +9,14 @@ class SlippageSelector extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          Row(children: [Text('Slippage Tolerance')]),
+          Row(
+            children: [
+              Text(
+                'Slippage Tolerance',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+              ),
+            ],
+          ),
         ],
       ),
     );
