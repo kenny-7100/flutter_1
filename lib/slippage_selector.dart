@@ -13,7 +13,11 @@ class SlippageSelector extends StatelessWidget {
             children: [
               Text(
                 'Slippage Tolerance',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w400,
+                  height: 24 / 16,
+                ),
               ),
             ],
           ),
