@@ -44,17 +44,17 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+      body: Container(
+        width: double.infinity,
+        height: 100,
+        margin: EdgeInsets.all(16),
+        padding: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: Color(0xffeeeeee),
+          border: Border.all(color: Colors.black, width: 1),
+          borderRadius: BorderRadius.circular(10),
         ),
+        child: Text('你好，世界$_counter', style: TextStyle(fontSize: 12, color: Colors.black)),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
